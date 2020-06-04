@@ -33,14 +33,21 @@ a {
   color: inherit;
 }
 
+img {
+  display: block;
+}
+
 /*===============HEADER===============*/
 
 .header {
+  position: fixed;
   background-color: #373B42;
+  right: 0;
+  left: 0;
 }
 
 .header .container {
-  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 60rem;
@@ -63,3 +70,29 @@ a {
 }
 
 /*===============/HEADER/===============*/
+/*===============BANNER===============*/
+
+.banner {
+  padding: 160rem 0 100rem;
+}
+
+.company-logo {
+  width: 25%;
+  height: auto;
+}
+
+.banner .section-title {
+  margin: 50rem 0 0;
+}
+
+.banner .section-subtitle {
+  font-size: 32rem;
+  margin: 20rem 0 0;
+}
+
+.banner p {
+  max-width: 40%;
+  margin: 20rem 0 0;
+}
+
+/*===============/BANNER/===============*/

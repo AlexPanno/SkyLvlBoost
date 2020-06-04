@@ -1,4 +1,48 @@
 .container {
+  display: flex;
+  flex-direction: column;
   width: 1180px;
   margin: 0 auto;
+}
+
+section:nth-child(odd) .container {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.section-title {
+  font-size: 48rem;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 2px;
+  background-color: #FFEE00;
+  margin: 10rem 0 0;
+}
+
+section:nth-child(odd) .section-title::after {
+  margin: 10rem 0 0 auto;
+}
+
+.section-subtitle {
+  font-size: 20rem;
+  font-weight: 200;
+}
+
+.button {
+  display: block;
+  border: 1px solid #FFEE00;
+  font-weight: 700;
+  padding: 20rem 60rem;
+  margin: 50rem 0 0;
+  transition: background-color 400ms, color 400ms, transform 400ms;
+}
+
+.button:hover {
+  background-color: #FFEE00;
+  color: #000;
+  transform: scale(1.05);
 }
