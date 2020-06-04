@@ -37,6 +37,11 @@ section {
   padding: 100rem 0;
 }
 
+input {
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
 /*===============HEADER===============*/
 
 .header {
@@ -291,3 +296,51 @@ section {
 }
 
 /*===============/FAQ/===============*/
+/*===============CONTACT===============*/
+
+.contact {
+
+}
+
+.contact-form-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 40rem;
+}
+
+.contact-form-section:last-child {
+  margin: 0;
+}
+
+.contact-form-parameter {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.contact-form-parameter label {
+  font-weight: 700;
+  margin: 0 0 20rem;
+}
+
+.contact-form-parameter input {
+  height: 50rem;
+  background-color: transparent;
+  border: 2px solid #333;
+  font-size: 20rem;
+  color: #FFF;
+  outline: none;
+  padding: 0 0 0 10rem;
+}
+
+.form-submit-button {
+  font-size: 16rem;
+  border: none;
+  cursor: pointer;
+}
+
+.form-submit-button:hover {
+  background-color: #FFF;
+}
+
+/*===============/CONTACT/===============*/
