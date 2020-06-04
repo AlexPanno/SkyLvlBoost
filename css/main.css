@@ -104,3 +104,49 @@ section {
 }
 
 /*===============/ABOUT US/===============*/
+/*===============ABOUT US===============*/
+
+.our-advantages {
+  background-color: grey;
+}
+
+.advantage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.advantage:nth-child(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.advantage .circle-wrapper {
+  min-width: 250rem;
+}
+
+.advantage-description {
+  padding: 0 50rem;
+}
+
+.advantage-description h6 {
+  font-size: 32px;
+}
+
+.advantage-description p {
+  font-size: 20rem;
+  margin: 20rem 0 0;
+}
+
+.advantage-description p::after {
+  content: '';
+  display: block;
+  width: 20%;
+  height: 2px;
+  background-color: #FFEE00;
+  margin: 20rem 0 0;
+}
+
+.advantage:nth-child(2n) .advantage-description p::after {
+  margin: 20rem 0 0 auto;
+}

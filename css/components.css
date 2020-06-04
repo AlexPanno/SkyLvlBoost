@@ -8,7 +8,7 @@
 
 section:nth-child(odd) .container {
   align-items: flex-end;
-  text-align: right;
+  /* text-align: right; */
 }
 
 .section-title {
@@ -24,28 +24,13 @@ section:nth-child(odd) .container {
   margin: 10rem 0 0;
 }
 
-section:nth-child(odd) .section-title::after {
-  margin: 10rem 0 0 auto;
-}
-
 .section-subtitle {
   font-size: 20rem;
   font-weight: 200;
 }
 
-.button {
-  display: block;
-  border: 1px solid #FFEE00;
-  font-weight: 700;
-  padding: 20rem 60rem;
-  margin: 50rem 0 0;
-  transition: background-color 400ms, color 400ms, transform 400ms;
-}
-
-.button:hover {
-  background-color: #FFEE00;
-  color: #000;
-  transform: scale(1.05);
+section:nth-child(odd) .section-title::after {
+  margin: 10rem 0 0 auto;
 }
 
 .content-box {
@@ -60,6 +45,22 @@ section:nth-child(odd) .section-title::after {
   padding: 50rem;
 }
 
+.button {
+  display: block;
+  width: fit-content;
+  border: 1px solid #FFEE00;
+  font-weight: 700;
+  padding: 20rem 60rem;
+  margin: 50rem 0 0;
+  transition: background-color 400ms, color 400ms, transform 400ms;
+}
+
+.button:hover {
+  background-color: #FFEE00;
+  color: #000;
+  transform: scale(1.05);
+}
+
 .content-box-paragraph {
   font-size: 24rem;
   line-height: 36rem;
@@ -70,15 +71,25 @@ section:nth-child(odd) .section-title::after {
   margin: 0;
 }
 
-.buttons-container {
+.circle-wrapper {
   display: flex;
-  margin: 50rem 0 0;
+  width: 250rem;
+  height: 250rem;
+  border: 1px solid #FFF;
+  border-radius: 50%;
 }
 
-.buttons-container .button {
-  margin: 0 30rem 0 0;
+.circle-wrapper-inner {
+  display: flex;
+  width: 80%;
+  height: 80%;
+  background-color: #333;
+  border-radius: inherit;
+  margin: auto;
 }
 
-.buttons-container .button:last-child {
-  margin: 0;
+.circle-wrapper-inner img {
+  width: 60%;
+  height: auto;
+  margin: auto;
 }
