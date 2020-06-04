@@ -344,3 +344,62 @@ input {
 }
 
 /*===============/CONTACT/===============*/
+/*===============FOOTER===============*/
+
+.footer {
+  padding: 50rem 0;
+}
+
+.footer .container {
+  align-items: center;
+}
+
+
+
+.socials {
+  position: relative;
+  display: flex;
+}
+
+.socials::before {
+  content: 'Мы в соц. сетях';
+  position: absolute;
+  text-align: center;
+  top: -40rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.socials::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 30%;
+  height: 2px;
+  background-color: #FFEE00;
+  bottom: -30rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.social-link {
+  width: 60rem;
+  height: 60rem;
+  border: 1px solid #FFEE00;
+  border-radius: 50%;
+  margin: 0 10rem;
+  transition: background-color 400ms;
+}
+
+.social-link:hover {
+  background-color: #FFEE00;
+}
+
+.author-link {
+  color: #808080;
+  margin: 50rem 0 0;
+}
+
+/*===============/FOOTER/===============*/
