@@ -1,5 +1,6 @@
 .container {
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
   width: 1180px;
   margin: 0 auto;
@@ -11,7 +12,7 @@ section:nth-child(odd) .container {
 }
 
 .section-title {
-  font-size: 48rem;
+  font-size: 32rem;
 }
 
 .section-title::after {
@@ -45,4 +46,39 @@ section:nth-child(odd) .section-title::after {
   background-color: #FFEE00;
   color: #000;
   transform: scale(1.05);
+}
+
+.content-box {
+  width: 100%;
+  border: 2px solid #FFF;
+  padding: 20rem;
+  margin: 50rem 0 0;
+}
+
+.content-box-inner {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 50rem;
+}
+
+.content-box-paragraph {
+  font-size: 24rem;
+  line-height: 36rem;
+  margin: 50rem 0 0;
+}
+
+.content-box-paragraph:first-child {
+  margin: 0;
+}
+
+.buttons-container {
+  display: flex;
+  margin: 50rem 0 0;
+}
+
+.buttons-container .button {
+  margin: 0 30rem 0 0;
+}
+
+.buttons-container .button:last-child {
+  margin: 0;
 }
