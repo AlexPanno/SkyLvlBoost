@@ -44,6 +44,7 @@ section {
   background-color: #373B42;
   right: 0;
   left: 0;
+  z-index: 99;
 }
 
 .header .container {
@@ -99,14 +100,14 @@ section {
 /*===============ABOUT US===============*/
 
 .about-us {
-  background-color: red;
+
 }
 
 /*===============/ABOUT US/===============*/
 /*===============OUR ADVANTAGES===============*/
 
 .our-advantages {
-  background-color: grey;
+
 }
 
 .advantage {
@@ -154,7 +155,7 @@ section {
 /*===============OUR SERVICES===============*/
 
 .our-services {
-  background-color: green;
+
 }
 
 .our-services .content-box-inner {
@@ -162,7 +163,7 @@ section {
 }
 
 .slick-track {
-  padding: 20px 0;
+  padding: 20rem 0;
 }
 
 .service-slide {
@@ -236,3 +237,57 @@ section {
 }
 
 /*===============/OUR SERVICES/===============*/
+/*===============FAQ===============*/
+
+.question-block {
+  border: 2px solid #333;
+  padding: 20rem;
+  margin: 0 0 20rem;
+}
+
+.question-block:last-child {
+  margin: 0;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+}
+
+.question-button {
+  width: 30rem;
+  height: auto;
+  cursor: pointer;
+  margin: 0 20rem 0 0;
+  transition: transform 400ms;
+}
+
+.active-question-button {
+  transform: rotate(45deg);
+}
+
+.question p {
+  font-size: 20rem;
+  font-weight: 700;
+}
+
+.answer {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 50rem 0;
+  transition: opacity 600ms, max-height 800ms;
+}
+
+.answer p {
+  font-size: 20rem;
+  line-height: 28rem;
+  padding: 20rem 0 10rem;
+}
+
+.active-answer {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+/*===============/FAQ/===============*/
