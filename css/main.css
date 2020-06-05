@@ -79,6 +79,11 @@ input {
 /*===============BANNER===============*/
 
 .banner {
+  background:
+    linear-gradient(270deg, #000 30%, transparent 60%),
+    linear-gradient(#000, transparent 40%),
+    linear-gradient(0deg, #000, transparent 40%),
+    url('../img/backgrounds/banner-background.jpg') -300rem center / cover;
   padding: 160rem 0 100rem;
 }
 
@@ -110,14 +115,20 @@ input {
 /*===============ABOUT US===============*/
 
 .about-us {
-
+  background:
+    linear-gradient(#000, transparent 30%),
+    linear-gradient(0deg, #000, transparent 30%),
+    url('../img/backgrounds/about-us-background.jpg') no-repeat center / cover;
 }
 
 /*===============/ABOUT US/===============*/
 /*===============OUR ADVANTAGES===============*/
 
 .our-advantages {
-
+  background:
+    linear-gradient(#000, transparent 30%),
+    linear-gradient(0deg, #000, transparent 30%),
+    url('../img/backgrounds/our-advantages-background.jpg') no-repeat center / cover;
 }
 
 .advantage {
@@ -165,7 +176,10 @@ input {
 /*===============OUR SERVICES===============*/
 
 .our-services {
-
+  background:
+    linear-gradient(#000, transparent 50%),
+    linear-gradient(0deg, #000, transparent 20%),
+    url('../img/backgrounds/our-services-background.jpg') no-repeat center / cover;
 }
 
 .our-services .content-box-inner {
@@ -330,6 +344,7 @@ input {
 .answer p {
   font-size: 20rem;
   line-height: 28rem;
+  font-weight: 200;
   padding: 20rem 0 10rem;
 }
 
@@ -342,7 +357,10 @@ input {
 /*===============CONTACT===============*/
 
 .contact {
-
+  background:
+    linear-gradient(#000, transparent 40%),
+    linear-gradient(0deg, #000, transparent 40%),
+    url('../img/backgrounds/contact-background.jpg') no-repeat center / cover;
 }
 
 .contact-form-section {

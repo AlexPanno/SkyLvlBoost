@@ -25,7 +25,6 @@ section:nth-child(odd) .section-title::after {
 
 .section-subtitle {
   font-size: 20rem;
-  font-weight: 200;
   margin: 20rem 0 0;
 }
 
