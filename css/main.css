@@ -82,6 +82,11 @@ input {
   padding: 160rem 0 100rem;
 }
 
+.banner .container {
+  align-items: flex-end;
+  text-align: right;
+}
+
 .company-logo {
   width: 25%;
   height: auto;
@@ -165,6 +170,44 @@ input {
 
 .our-services .content-box-inner {
   padding: 30rem 20rem;
+}
+
+.slick-prev, .slick-next {
+  display: flex;
+  width: 50rem;
+  height: 50rem;
+  border-radius: 50%;
+  background-color: #000;
+  z-index: 9;
+}
+
+.slick-prev:hover, .slick-prev:focus,
+.slick-next:hover, .slick-next:focus {
+  background-color: #000;
+}
+
+.slick-prev {
+  left: -65rem;
+}
+
+.slick-next {
+  right: -65rem;
+}
+
+.slick-prev:before, .slick-next:before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  margin: auto;
+}
+
+.slick-prev:before {
+  content: url('../img/controls/left-chevron.svg');
+}
+
+.slick-next:before {
+  content: url('../img/controls/right-chevron.svg');
 }
 
 .slick-track {

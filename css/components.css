@@ -6,11 +6,6 @@
   margin: 0 auto;
 }
 
-section:nth-child(odd) .container {
-  align-items: flex-end;
-  /* text-align: right; */
-}
-
 .section-title {
   font-size: 32rem;
 }
@@ -24,14 +19,20 @@ section:nth-child(odd) .container {
   margin: 10rem 0 0;
 }
 
+section:nth-child(odd) .section-title::after {
+  margin: 10rem 0 0 auto;
+}
+
 .section-subtitle {
   font-size: 20rem;
   font-weight: 200;
   margin: 20rem 0 0;
 }
 
-section:nth-child(odd) .section-title::after {
-  margin: 10rem 0 0 auto;
+section:nth-child(odd) .section-title,
+section:nth-child(odd) .section-subtitle {
+  align-self: flex-end;
+  text-align: right;
 }
 
 .content-box {
