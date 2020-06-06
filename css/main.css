@@ -75,6 +75,20 @@ input {
   color: #FFEE00;
 }
 
+.touch-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20rem;
+  cursor: pointer;
+}
+
+.touch-menu-line {
+  width: 30rem;
+  height: 2px;
+  background-color: #FFEE00;
+}
+
 /*===============/HEADER/===============*/
 /*===============BANNER===============*/
 
@@ -151,7 +165,7 @@ input {
 }
 
 .advantage-description h6 {
-  font-size: 32px;
+  font-size: 32rem;
 }
 
 .advantage-description p {
@@ -232,11 +246,12 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 330rem;
   width: 90%;
   border: 2px solid #333;
   color: #808080;
   text-align: center;
-  padding: 20rem;
+  padding: 20rem 10rem;
   margin: 0 auto;
   transition: border-color 400ms, color 400ms, transform 400ms;
 }
@@ -408,7 +423,7 @@ input {
 /*===============FOOTER===============*/
 
 .footer {
-  padding: 50rem 0;
+  padding: 100rem 0 50rem;
 }
 
 .footer .container {
