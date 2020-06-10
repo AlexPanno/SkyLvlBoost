@@ -15,27 +15,30 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .header .container {
+    background-color: #373B42;
+  }
+
   .header-nav {
     position: fixed;
     width: 100%;
+    height: 60rem;
     background-color: #373B42;
-    top: 60rem;
+    top: 0;
     left: 0;
-    z-index: 99;
+    z-index: -1;
+    transition: top 400ms;
   }
 
   .nav-ul {
     align-items: center;
-    justify-content: space-evenly;
-    height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: height 400ms, opacity 400ms;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 13.125%;
   }
 
-  .active-nav-ul {
-    height: 60rem;
-    opacity: 1;
+  .active-header-nav {
+    top: 60rem;
   }
 
   .nav-link {
@@ -44,6 +47,13 @@
 
   .touch-menu {
     display: flex;
+  }
+
+  .banner {
+    background:
+      linear-gradient(#000, transparent 80%),
+      linear-gradient(0deg, #000, transparent 80%),
+      url('../img/backgrounds/banner-background.jpg') center / cover;
   }
 
   .company-logo {
@@ -88,39 +98,18 @@
 }
 
 @media screen and (max-width: 768px) {
-  html {
-    font-size: 0.11vw;
+  .banner p {
+    max-width: 230px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  html {
-    font-size: 0.66px;
+  .container {
+    width: 420px;
   }
 
-  section:nth-child(odd) .section-title,
-  section:nth-child(odd) .section-subtitle,
-  .section-title,
-  .section-subtitle {
-    align-self: center;
-    text-align: center;
-  }
-
-  section:nth-child(odd) .section-title::after,
-  .section-title::after {
-    margin: 10rem auto 0;
-  }
-
-  .content-box-paragraph {
-    font-size: 20rem;
-    line-height: 30rem;
-  }
-
-  .banner {
-    background:
-      linear-gradient(#000, transparent 90%),
-      linear-gradient(0deg, #000, transparent 90%),
-      url('../img/backgrounds/banner-background.jpg') center / cover;
+  .header .container {
+    height: 50px;
   }
 
   .banner .container {
@@ -128,47 +117,63 @@
     text-align: center;
   }
 
-  .banner p {
-    max-width: 70%;
+  section:nth-child(odd) .section-title,
+  section:nth-child(odd) .section-subtitle,
+  .section-title {
+    align-self: center;
   }
 
-  .contact-form-parameter label {
-    margin: 0 auto 20rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .button {
-    margin: 50rem auto 0;
+  section:nth-child(odd) .section-title::after,
+  .section-title::after {
+    margin: 10rem auto 0;
   }
 
-  .content-box-inner {
-    padding: 25rem;
-  }
-
-  .content-box-paragraph {
+  .section-subtitle {
     text-align: center;
+  }
+
+  .header-nav {
+    height: auto;
+    top: -100%;
+  }
+
+  .active-header-nav {
+    top: 0;
   }
 
   .nav-ul {
     flex-direction: column;
-    max-height: 0;
-    height: auto;
-    transition: padding 400, max-height 400ms, opacity 400ms;
-  }
-
-  .active-nav-ul {
-    height: auto;
-    max-height: 1000px;
-    padding: 30rem 0;
+    padding: 80px 0 30px;
   }
 
   .nav-link {
-    font-size: 20rem;
-    margin: 0 0 20rem;
+    margin: 0 0 30rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 0.175vw;
   }
 
-  .nav-link:last-child {
-    margin: 0;
+  .container {
+    width: 87.5%;
+  }
+
+  .logo,
+  .nav-link a  {
+    font-size: 13px;
+  }
+
+  .touch-menu {
+    height: 17px;
+  }
+
+  .touch-menu-line {
+    width: 25px;
+  }
+
+  .nav-link {
+    margin: 0 0 25px;
   }
 }

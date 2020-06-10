@@ -49,8 +49,8 @@ questionButtons.forEach((item) => {
 // Touch menu button
 
 let touchMenuButton = document.querySelector('.touch-menu');
-let headerNavUl = document.querySelector('.nav-ul');
+let headerNav = document.querySelector('.header-nav');
 
 touchMenuButton.onclick = function () {
-  headerNavUl.classList.toggle('active-nav-ul');
+  headerNav.classList.toggle('active-header-nav');
 }
